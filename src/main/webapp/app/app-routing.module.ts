@@ -25,7 +25,7 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
         },
          {
           path: 'home/user-management',
-          loadChildren: () => import('./home/user-management/admin-routing.module').then(m => m.AdminRoutingModule),
+          loadChildren: () => import('./home/user-management/admin-routing.module'),
 
         },
         {
