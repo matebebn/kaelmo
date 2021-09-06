@@ -8,4 +8,10 @@ export const HOME_ROUTE: Route = {
   data: {
     pageTitle: 'home.title',
   },
+  {
+  path: 'user-panel',
+  component: HomeComponent,
+  data: {
+    pageTitle: 'home.title.list',
+  },
 };
