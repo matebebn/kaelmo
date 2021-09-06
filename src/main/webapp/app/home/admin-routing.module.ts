@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
         path: 'user-panel',
         loadChildren: () => import('./user-management/user-management.module').then(m => m.UserManagementModule),
         data: {
-          pageTitle: 'home.title.list',
+          pageTitle: 'userManagement.home.title',
         },
       },
       /* jhipster-needle-add-admin-route - JHipster will add admin routes here */
