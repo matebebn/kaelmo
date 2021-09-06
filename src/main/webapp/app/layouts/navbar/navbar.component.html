@@ -45,35 +45,15 @@
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </ul>
       </li>
-            <li
-        *ngSwitchCase="true"
-        ngbDropdown
-        class="nav-item dropdown pointer"
-        display="dynamic"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-      >
-        <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu" data-cy="entity">
-          <span>
-            <fa-icon icon="th-list"></fa-icon>
-            <span jhiTranslate="global.menu.entities.main">Entities</span>
-          </span>
-        </a>
-        <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
-          <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
-        </ul>
-      </li>
+
       <li
         *jhiHasAnyAuthority="'ROLE_USER'"
-        ngbDropdown
-        class="nav-item dropdown pointer"
-        display="dynamic"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
       >
-            <a class="dropdown-item" routerLink="admin/user-management" routerLinkActive="active" (click)="collapseNavbar()">
+            <a class="dropdown-item" routerLink="home/list/user-management" routerLinkActive="active" (click)="collapseNavbar()">
               <fa-icon icon="users" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.admin.userManagement">User management</span>
+              <span jhiTranslate="global.menu.admin.userManagement">User panel</span>
             </a>
       </li>
       <li
