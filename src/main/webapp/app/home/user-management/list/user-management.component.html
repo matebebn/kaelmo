@@ -42,6 +42,9 @@
           <td>
             <a [routerLink]="['./', user.login, 'view']">{{ user.id }}</a>
           <td>{{ user.langKey }}</td>
+          </td>
+          <td>{{ user.login }}</td>
+          <td>{{ user.email }}</td>
           <td>
             <div *ngFor="let authority of user.authorities">
               <span class="badge badge-info">{{ authority }}</span>
