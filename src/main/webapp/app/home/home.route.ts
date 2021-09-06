@@ -3,7 +3,7 @@ import { Route } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { UserManagementComponent } from './list/user-management.component';
 
-export const HOME_ROUTE: Routes = [
+export const HOME_ROUTE: Route = [
   {
   path: '',
   component: HomeComponent,
@@ -12,10 +12,4 @@ export const HOME_ROUTE: Routes = [
   },
   },
   {
-  path: 'user-panel',
-  component: UserManagementComponent,
-  data: {
-    pageTitle: 'home.title.list',
-  },
-  },
 ];
